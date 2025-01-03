@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Disable scroll when sidebar is visible */
+html.no-scroll, body.no-scroll {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 99px;
+}
