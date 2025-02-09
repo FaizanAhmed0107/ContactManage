@@ -9,6 +9,10 @@ This project is a full-stack MERN (MongoDB, Express, React, Node.js) application
 *   RESTful API: Secure API endpoints for contact management.
 *   Database Integration: Stores contacts in a MongoDB database.
 
+## View Live Application
+
+Access the deployed application on Render: [Contact Manager Live](https://contactmanage-1.onrender.com)
+
 ## Technologies Used
 
 *   **Frontend:** React
