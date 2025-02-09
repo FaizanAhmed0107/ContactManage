@@ -1,6 +1,9 @@
+import address from "./address.json";
+//  "address": "http://localhost:3000"
+
 const AddContact = async (accessToken, data) => {
     try {
-        const response = await fetch('http://localhost:3000/api/contacts', {
+        const response = await fetch(address.address + '/api/contacts', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${accessToken}`,
@@ -23,15 +26,3 @@ const AddContact = async (accessToken, data) => {
 };
 
 export default AddContact;
-
-/*
-POST http://localhost:3000/api/contacts
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiTXlVc2VyTmFtZTIiLCJlbWFpbCI6Im15c2Vjb25kbWFpbEBub21haWwuY29tIiwiaWQiOiI2NmY1NzQ4NjVhYjUyNDM5MzM0Mjc0NGQifSwiaWF0IjoxNzI3MzYyMjAwLCJleHAiOjE3MjczNjQwMDB9.GoilrXe9G3jcmgV0aTRXMibN7v4RB_tTFla9b5no6v8
-
-{
-  "name": "MyZName",
-  "email": "myzmail@nomail.com",
-  "phone": "9714794348"
-}
- */

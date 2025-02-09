@@ -1,10 +1,12 @@
+import address from "./address.json";
 import HandleLogin from "./HandleLogin.jsx";
 
 const HandleSignup = async (username, email, password) => {
     const data = {username, email, password};
 
     try {
-        const response = await fetch('http://localhost:3000/api/users/register', {
+        console.log(address.address);
+        const response = await fetch(address.address + '/api/users/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

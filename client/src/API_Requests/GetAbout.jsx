@@ -1,6 +1,7 @@
+import address from "./address.json";
 const GetAbout = async (accessToken) => {
     try {
-        const response = await fetch('http://localhost:3000/api/users/current', {
+        const response = await fetch(address.address + '/api/users/current', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${accessToken}`,

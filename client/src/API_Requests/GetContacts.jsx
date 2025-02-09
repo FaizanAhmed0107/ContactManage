@@ -1,6 +1,7 @@
+import address from "./address.json";
 const GetAbout = async (accessToken) => {
     try {
-        const response = await fetch('http://localhost:3000/api/contacts', {
+        const response = await fetch(address.address + '/api/contacts', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${accessToken}`,
