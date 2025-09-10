@@ -54,8 +54,8 @@ Access the deployed application on Render: [Contact Manager Live](https://contac
 3.  Create a `.env` file in the `backend` directory and add your environment variables:
 
     ```
-    MONGODB_URI=your_mongodb_connection_string
-    JWT_SECRET=your_secret_key_for_jwt
+    MONGODB_CONNECTION=your_mongodb_connection_string
+    ACCESS_TOKEN_SECRET=your_secret_key_for_jwt
     PORT=5000 # Optional: Set a custom port
     ```
     Create a `.env` file in the `frontend` directory and add your environment variables:
