@@ -37,7 +37,7 @@ Access the deployed application on Render: [Contact Manager Live](https://contac
 1.  Clone the repository:
 
     ```bash
-    git clone https://github.com/mrunknown101331/ContactManage.git
+    git clone https://github.com/faizanahmed0107/ContactManage.git
     cd ContactManage
     ```
 
@@ -47,20 +47,16 @@ Access the deployed application on Render: [Contact Manager Live](https://contac
     npm install  # or yarn install
     cd backend
     npm install
-    cd ../frontend
+    cd ../client
     npm install
     ```
 
-3.  Create a `.env` file in the `backend` directory and add your environment variables:
+3.  Create a `.env` file in the `server` directory and add your environment variables:
 
     ```
     MONGODB_CONNECTION=your_mongodb_connection_string
     ACCESS_TOKEN_SECRET=your_secret_key_for_jwt
     PORT=5000 # Optional: Set a custom port
-    ```
-    Create a `.env` file in the `frontend` directory and add your environment variables:
-    ```
-    REACT_APP_API_URL=http://localhost:5000/api # URL to connect to backend
     ```
 
 ## Usage
@@ -68,18 +64,18 @@ Access the deployed application on Render: [Contact Manager Live](https://contac
 1.  Start the backend server:
 
     ```bash
-    cd backend
-    npm run server # if you have "server": "nodemon server.js" in scripts or npm start
+    cd server
+    npm run dev
     ```
 
 2.  Start the frontend development server:
 
     ```bash
-    cd frontend
-    npm start  # or yarn start
+    cd client
+    npm run dev
     ```
 
-3.  The frontend application should be accessible in your browser at `http://localhost:3000` (or the port specified by your React development setup).
+3.  The frontend application should be accessible in your browser at `http://localhost:5173` (or the port specified by your React development setup).
 
 ## Contributing
 
